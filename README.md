@@ -3,7 +3,7 @@
 
 
 
-## **SYSTEM REQUIREMENTS:**
+## **SYSTEM REQUIREMENTS**
 
 To set up your environment you'll need the following configurations. You first need to install PyCharm IDE, I've found this to be the most user friendly IDE to run with Robot Framework.
 
