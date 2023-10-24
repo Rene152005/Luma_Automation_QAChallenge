@@ -55,11 +55,11 @@ $ pip install -r requirements.txt
 ```
 *Note:* This requirements.txt file is left on the Repo's root folder as the most efficient way to install all necessary components for this execution.
 
-(4.) Just in case if you get a pip message, please run this command:
+(7.) Just in case if you get a pip message, please run this command:
 ```
 $ python -m pip install --upgrade pip
 ```
-(6.) Run your first test case or test suite!
+(8.) Run your first test case or test suite!
 
 In order to do this, first we need to know the arguments/parameters that we can use:
 * From the bottom section of Pycharm, select "Terminal". 
