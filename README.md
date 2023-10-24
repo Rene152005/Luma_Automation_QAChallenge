@@ -1,4 +1,4 @@
-# **LUMA E-COMMERCE WEBSITE**
+# **LUMA E-COMMERCE WEBSITE AUTOMATION**
  *Created by Rene De Leon R.*
 
 
