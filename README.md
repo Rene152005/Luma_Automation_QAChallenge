@@ -16,7 +16,6 @@ For the reader's reference, I'm leaving some useful links to help the installati
 * Python: [Download latest version here](https://www.python.org/downloads/)
 * Pycharm Community Edition: [Download latest version here](https://www.jetbrains.com/pycharm/download/)
 * Chrome Driver: [Download latest version here](https://googlechromelabs.github.io/chrome-for-testing/)
-* Git: [Download latest version here](https://git-scm.com/downloads)
 * Luma Automation QA Challenge repo Github [HERE](https://github.com/Rene152005/Luma_Automation_QAChallenge).
 
 ## **LINKS, REFERENCES & MANUAL TESTING**
@@ -65,12 +64,15 @@ python -m pip install --upgrade pip
 ```
 (8.) Run your first test case or test suite! I like to drop my unzipped chromedriver on the same folder where I installed python 3.9 (root folder). Without the chromedriver, the execution will not work.
 
+_Note_: In order for the chromedriver to work during the execution, the chromedriver version and google chrome version must be the same.
+
 In order to do this, first we need to know the arguments/parameters that we can use:
 * From the bottom section of Pycharm, select "Terminal". 
 * Start browsing your way from the root folder until you reach the route ("CD" and "DIR" commands are your friends) until you reach this location:
 ```
-Test_Suites/Orders_And_Returns/Orders_And_Returns.robot
+Test_Suites/Orders_And_Returns/
 ```
+* Stay on this route while you start your execution.
 * To execute a specific test case by title, please use the following command:
 ```
 robot -t "Guest user goes to Order and Returns" .\Orders_And_Returns.robot
