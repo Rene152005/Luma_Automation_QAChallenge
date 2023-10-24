@@ -13,3 +13,8 @@ The user clicks on the link Order and Returns
     
 The user enters information on the form
     The user fills out the form
+    
+The Order Information screen
+    The Order information table details validation
+    Validation of Ordered Products in first line
+    Validation of Ordered Products in second line

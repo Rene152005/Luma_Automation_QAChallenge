@@ -1,6 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary                         implicit_wait=15
-Variables    ../Commons/Common_Variables.py
+Variables   ../Commons/Common_Variables.py
 
 
 
@@ -12,6 +12,7 @@ ${CONTINUE_BUTTON}                                  //button[@type="submit"]/spa
 ${ORDER_ID_FIELD}                                   //input[@id="oar-order-id"]
 ${BILLING_LAST_NAME_FIELD}                          //input[@id="oar-billing-lastname"]
 ${EMAIL_FIELD}                                      //input[@id="oar_email"]
+${ORDER_INFORMATION}                                //li[@class="item cms_page"]/strong
 
 
 *** Keywords ***
@@ -36,3 +37,28 @@ The user fills out the form
     Set focus to element                            ${EMAIL_FIELD}    
     Click element                                   ${EMAIL_FIELD}
     Input Text                                      ${EMAIL_FIELD}                                  ${EMAIL}
+    Set focus to element                            ${CONTINUE_BUTTON}    
+    Click element                                   ${CONTINUE_BUTTON}
+    wait until keyword succeeds                     3x    2s 
+    ...                                             Set focus to element                            ${ORDER_INFORMATION}
+    
+The Order information table details validation
+    [Documentation]    Validations for Order Information contents
+    FOR     ${categories}  IN RANGE  1  6
+            ${category_text} =  Set Variable        ${TABLE_HEADERS}[${categories}]
+            Page Should Contain Element             //table[@class="data table table-order-items"]//th[text()='${category_text}']
+    END
+
+Validation of Ordered Products in first line
+    [Documentation]    Validations for ordered products on the first line of the table
+    FOR     ${categories}  IN RANGE  1  6
+            ${category_text} =  Set Variable        ${PURCHASED_PRODUCT_1}[${categories}]
+            Page Should Contain Element             //tr[@id="order-item-row-82599"]//*[contains(text(),'${category_text}')] 
+    END
+    
+Validation of Ordered Products in second line
+    [Documentation]    Validations for ordered products on the second line of the table
+    FOR     ${categories}  IN RANGE  1  6
+            ${category_text} =  Set Variable        ${PURCHASED_PRODUCT_2}[${categories}]
+            Page Should Contain Element             //tr[@id="order-item-row-82601"]//*[contains(text(),'${category_text}')] 
+    END
