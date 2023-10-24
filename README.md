@@ -9,7 +9,7 @@ To set up your environment you'll need the following configurations. You first n
 
 This setup runs with Robot Framework and Selenium Library with Chrome webdriver. The combination of setup currently used by me is:
 - Python v3.9
-- Pycharm IDE (latest)
+- Pycharm IDE 2023.2.3 (latest)
 - Chrome Driver v118.0.5993.88
 
 For the reader's reference, I'm leaving some useful links to help the installation process:

@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-#Selects the browser for the robots
-# WEB_BROWSER = "Chrome"
-# BROWSER_TYPE = "Firefox"
-
 #Environments
 ENVIRONMENT = "https://magento.softwaretestingboard.com/"
 

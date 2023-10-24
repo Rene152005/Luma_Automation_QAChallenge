@@ -7,10 +7,8 @@ Variables   Common_Variables.py
 Resource    ../../Resources/Page_Objects/Orders_And_Returns_Page_Object.robot
 
 
-
 *** Variables ***
 ${LUMA_HOMEPAGE}                                    //a[@class="logo"]
-
 
 
 *** Keywords ***
@@ -32,11 +30,13 @@ Wait and Click Element
     ...                                             Click Element                                   ${locator}
     Run Keyword If                                  ${isClicked} == ${False}
     ...                                             Async JS Click                                  ${locator}
-    
+
+Global Suite Setup
+    Log to Console      == STARTING FLOWS BY RENE ==
+   
 Global Suite Teardown
-    Delete All Cookies
-    Close Browser
-    Log to console   == END OF FLOW BY RENE ==
+    Sleep    1
+    Log to console      == END OF FLOWS BY RENE ==
 
 Existing user logs into eComm website
     [Arguments]     ${locale}

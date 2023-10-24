@@ -3,7 +3,6 @@ Library     SeleniumLibrary                         implicit_wait=15
 Variables   ../Commons/Common_Variables.py
 
 
-
 *** Variables ***
 #***************************************************LOCATORS BY XPATH *****************************************************#
 ${COPYRIGHT_FOOTER}                                 //small[@class="copyright"]
@@ -13,6 +12,7 @@ ${ORDER_ID_FIELD}                                   //input[@id="oar-order-id"]
 ${BILLING_LAST_NAME_FIELD}                          //input[@id="oar-billing-lastname"]
 ${EMAIL_FIELD}                                      //input[@id="oar_email"]
 ${ORDER_INFORMATION}                                //li[@class="item cms_page"]/strong
+${URL_LOCATION}                                     /sales/guest/view/
 
 
 *** Keywords ***
@@ -41,6 +41,9 @@ The user fills out the form
     Click element                                   ${CONTINUE_BUTTON}
     wait until keyword succeeds                     3x    2s 
     ...                                             Set focus to element                            ${ORDER_INFORMATION}
+
+Location validation
+    Location Should Contain                         ${URL_LOCATION}
     
 The Order information table details validation
     [Documentation]    Validations for Order Information contents
@@ -62,3 +65,7 @@ Validation of Ordered Products in the second line
             ${second_line_contents} =  Set Variable        ${PURCHASED_PRODUCT_2}[${categories}]
             Page Should Contain Element             //tr[@id="order-item-row-82601"]//*[contains(text(),'${second_line_contents}')] 
     END
+    
+The flow ends by closing the window
+    Delete All Cookies
+    Close browser

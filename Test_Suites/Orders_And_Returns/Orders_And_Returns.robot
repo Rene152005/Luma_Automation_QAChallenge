@@ -1,9 +1,9 @@
 *** Settings ***
-Resource          Orders_And_Returns_Resources.robot
-Resource          ../../Resources/Commons/Common_elements.robot
-Suite Teardown    Global Suite Teardown
-Force Tags        Orders and Returns
-
+Resource            Orders_And_Returns_Resources.robot
+Resource            ../../Resources/Commons/Common_Elements.robot
+Suite Setup         Global Suite Setup
+Suite Teardown      Global Suite Teardown
+Force Tags          Orders and Returns
 
 
 *** Test Cases ***
@@ -16,6 +16,7 @@ Guest user goes to Order and Returns
     The user clicks on the link Order and Returns
     The user enters information on the form
     The Order Information screen
+    Completes the process
 
 Guest user goes to Order and Returns
     [Documentation]             The following test case will open the e-Commerce website in Firefox,  
@@ -26,6 +27,7 @@ Guest user goes to Order and Returns
     The user clicks on the link Order and Returns
     The user enters information on the form
     The Order Information screen
+    Close browser
     
 Guest user goes to Order and Returns
     [Documentation]             The following test case will open the e-Commerce website in Firefox,  
@@ -36,3 +38,4 @@ Guest user goes to Order and Returns
     The user clicks on the link Order and Returns
     The user enters information on the form
     The Order Information screen
+    Close browser
