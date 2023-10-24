@@ -55,15 +55,15 @@ The Order information table details validation
 Validation of Ordered Products in the first line
     [Documentation]    Validations for ordered products on the first line of the table
     FOR     ${categories}  IN RANGE  1  6
-            ${first_line_contents} =  Set Variable        ${PURCHASED_PRODUCT_1}[${categories}]
-            Page Should Contain Element             //tr[@id="order-item-row-82599"]//*[contains(text(),'${first_line_contents}')] 
+            ${first_row} =  Set Variable            ${PURCHASED_PRODUCT_1}[${categories}]
+            Page Should Contain Element             //tr[@id="order-item-row-82599"]//*[contains(text(),'${first_row}')] 
     END
     
 Validation of Ordered Products in the second line
     [Documentation]    Validations for ordered products on the second line of the table
     FOR     ${categories}  IN RANGE  1  6
-            ${second_line_contents} =  Set Variable        ${PURCHASED_PRODUCT_2}[${categories}]
-            Page Should Contain Element             //tr[@id="order-item-row-82601"]//*[contains(text(),'${second_line_contents}')] 
+            ${second_row} =  Set Variable           ${PURCHASED_PRODUCT_2}[${categories}]
+            Page Should Contain Element             //tr[@id="order-item-row-82601"]//*[contains(text(),'${second_row}')] 
     END
     
 The flow ends by closing the window
