@@ -48,7 +48,7 @@ python --version
 * On the bottom path, its also recommendable to add "C:\Python39\Scripts" which should be the address to the \Scripts folder directly.
 * Reboot the system
 
-(6.) Install the repo from Github either from zip files or SSH (reference link on step #2). After the repo is installed, please install all the Python packages and tools with one command by running this:
+(6.) Install the repo from Github either from zip files or SSH. After the repo is installed, please install all the Python packages and tools with one command by running this:
 ```
 $ pip install -r requirements.txt
 ```
