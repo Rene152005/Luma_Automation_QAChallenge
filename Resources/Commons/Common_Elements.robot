@@ -14,13 +14,12 @@ ${LUMA_HOMEPAGE}                                    //a[@class="logo"]
 
 
 *** Keywords ***
-Global Suite Setup
-    Open Browser                                    browser=${WEB_BROWSER}
-    Maximize Browser Window
-    Delete All Cookies                        
-
 Open URL for Project
-    Go to                                           ${ENVIRONMENT}
+    [Arguments]                                     ${BROWSER}
+    Open Browser                                    ${ENVIRONMENT}                                  ${BROWSER}
+    sleep   2
+    Maximize Browser Window
+    Delete All Cookies
     wait until element is visible                   ${LUMA_HOMEPAGE}                                timeout=15s
     
 Wait and Click Element

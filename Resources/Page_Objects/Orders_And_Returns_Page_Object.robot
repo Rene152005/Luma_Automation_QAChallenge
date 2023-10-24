@@ -52,13 +52,13 @@ The Order information table details validation
 Validation of Ordered Products in the first line
     [Documentation]    Validations for ordered products on the first line of the table
     FOR     ${categories}  IN RANGE  1  6
-            ${category_text} =  Set Variable        ${PURCHASED_PRODUCT_1}[${categories}]
-            Page Should Contain Element             //tr[@id="order-item-row-82599"]//*[contains(text(),'${category_text}')] 
+            ${first_line_contents} =  Set Variable        ${PURCHASED_PRODUCT_1}[${categories}]
+            Page Should Contain Element             //tr[@id="order-item-row-82599"]//*[contains(text(),'${first_line_contents}')] 
     END
     
 Validation of Ordered Products in the second line
     [Documentation]    Validations for ordered products on the second line of the table
     FOR     ${categories}  IN RANGE  1  6
-            ${category_text} =  Set Variable        ${PURCHASED_PRODUCT_2}[${categories}]
-            Page Should Contain Element             //tr[@id="order-item-row-82601"]//*[contains(text(),'${category_text}')] 
+            ${second_line_contents} =  Set Variable        ${PURCHASED_PRODUCT_2}[${categories}]
+            Page Should Contain Element             //tr[@id="order-item-row-82601"]//*[contains(text(),'${second_line_contents}')] 
     END

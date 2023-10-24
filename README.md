@@ -56,4 +56,8 @@ robot --i ATC001 .\Orders_And_Returns.robot
 ```
 5. Both commands from step 3 and step 4 do the same thing. With this, your browser window will open and the automation will begin.
 
+6. To run all test cases at once, use this command:
+```
+ robot .\Orders_And_Returns.robot
+```
 # Enjoy!
