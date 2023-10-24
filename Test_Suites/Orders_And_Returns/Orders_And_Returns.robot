@@ -27,7 +27,7 @@ Guest user goes to Order and Returns
     The user clicks on the link Order and Returns
     The user enters information on the form
     The Order Information screen
-    Close browser
+    Completes the process
     
 Guest user goes to Order and Returns
     [Documentation]             The following test case will open the e-Commerce website in Firefox,  
@@ -38,4 +38,4 @@ Guest user goes to Order and Returns
     The user clicks on the link Order and Returns
     The user enters information on the form
     The Order Information screen
-    Close browser
+    Completes the process
