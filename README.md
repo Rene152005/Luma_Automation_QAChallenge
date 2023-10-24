@@ -10,7 +10,7 @@ To set up your environment you'll need the following configurations. You first n
 This setup runs with Robot Framework and Selenium Library with Chrome webdriver. The combination of setup I'm currently using is as follows:
 - Python v3.9
 - Pycharm IDE 2023.2.3 (latest)
-- Chrome Driver v118.0.5993.88
+- ChromeDriver v118.0.5993.88
 
 For the reader's reference, I'm leaving some useful links to help the installation process:
 * Python: [Download latest version here](https://www.python.org/downloads/)
@@ -63,7 +63,7 @@ $ pip install -r requirements.txt
 ```
 $ python -m pip install --upgrade pip
 ```
-(8.) Run your first test case or test suite! I like to drop my unzipped chrome driver on the same folder where I installed python 3.9 (root folder). Without the chrome driver, the execution will not work.
+(8.) Run your first test case or test suite! I like to drop my unzipped chromedriver on the same folder where I installed python 3.9 (root folder). Without the chromedriver, the execution will not work.
 
 In order to do this, first we need to know the arguments/parameters that we can use:
 * From the bottom section of Pycharm, select "Terminal". 
