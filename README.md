@@ -37,13 +37,18 @@ For the reader's reference, I'm leaving some useful links to help the installati
 python --version
 ```
 ![](C:\Users\rened\PycharmProjects\Luma_Automation_QAChallenge\Resources\Files\pythonVersion.png)
+
 (5.) If Step #4 is not working, please ensure your Environment Variables are properly setup. As a possible solution, please follow these steps:
 * Position your mouse over "This PC" and right-click to select the option "Properties".
+
 ![](C:\Users\rened\PycharmProjects\Luma_Automation_QAChallenge\Resources\Files\MyPC.png)
+
 * Click on "Advanced system settings"
 * Select the tab "Advanced" and click the "Environment Variables…" button
 * Select the option "Path" from System variables and click on "Edit" button.
+
 ![](C:\Users\rened\PycharmProjects\Luma_Automation_QAChallenge\Resources\Files\Environment_Variables.png)
+
 * It's important to note that the path must be added to both places "User Variables for <user>" on the top section and also the "System variables" bottom section of the environment variables.
 * On the bottom path, its also recommendable to add "C:\Python39\Scripts" which should be the address to the \Scripts folder directly.
 * Reboot the system
