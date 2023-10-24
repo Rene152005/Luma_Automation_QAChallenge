@@ -53,15 +53,15 @@ python --version
 * On the bottom path, its also recommendable to add "C:\Python39\Scripts" which should be the address to the \Scripts folder directly.
 * Reboot the system
 
-(6.) Install the repo from Github either from zip files or SSH. After the repo is installed, please install all the Python packages and tools with one command by running this:
+(6.) Install the repo from Github either from zip files or SSH. After the repo is installed, open PyCharm, from the bottom footer section, find the "Terminal", click it and by running this command you will install all the necessary tools and prerequisites for this project:
 ```
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 *Note:* This requirements.txt file is left on the Repo's root folder as the most efficient way to install all necessary components for this execution.
 
 (7.) Just in case if you get a pip message, please run this command:
 ```
-$ python -m pip install --upgrade pip
+python -m pip install --upgrade pip
 ```
 (8.) Run your first test case or test suite! I like to drop my unzipped chromedriver on the same folder where I installed python 3.9 (root folder). Without the chromedriver, the execution will not work.
 
