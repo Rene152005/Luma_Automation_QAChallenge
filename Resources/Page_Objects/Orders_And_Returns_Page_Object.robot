@@ -49,14 +49,14 @@ The Order information table details validation
             Page Should Contain Element             //table[@class="data table table-order-items"]//th[text()='${category_text}']
     END
 
-Validation of Ordered Products in first line
+Validation of Ordered Products in the first line
     [Documentation]    Validations for ordered products on the first line of the table
     FOR     ${categories}  IN RANGE  1  6
             ${category_text} =  Set Variable        ${PURCHASED_PRODUCT_1}[${categories}]
             Page Should Contain Element             //tr[@id="order-item-row-82599"]//*[contains(text(),'${category_text}')] 
     END
     
-Validation of Ordered Products in second line
+Validation of Ordered Products in the second line
     [Documentation]    Validations for ordered products on the second line of the table
     FOR     ${categories}  IN RANGE  1  6
             ${category_text} =  Set Variable        ${PURCHASED_PRODUCT_2}[${categories}]

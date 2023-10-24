@@ -16,5 +16,5 @@ The user enters information on the form
     
 The Order Information screen
     The Order information table details validation
-    Validation of Ordered Products in first line
-    Validation of Ordered Products in second line
+    Validation of Ordered Products in the first line
+    Validation of Ordered Products in the second line
