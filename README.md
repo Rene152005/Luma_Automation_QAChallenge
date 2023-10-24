@@ -13,11 +13,11 @@ This setup runs with Robot Framework and Selenium Library with Chrome webdriver.
 - Chrome Driver v118.0.5993.88
 
 For the reader's reference, I'm leaving some useful links to help the installation process:
-1. Python: [Download latest version here](https://www.python.org/downloads/)
-2. Pycharm Community Edition: [Download latest version here](https://www.jetbrains.com/pycharm/download/)
-3. Chrome Driver: [Download latest version here](https://googlechromelabs.github.io/chrome-for-testing/)
-4. Git: [Download latest version here](https://git-scm.com/downloads)
-5. Luma Automation QA Challenge repo Github [HERE](https://github.com/Rene152005/Luma_Automation_QAChallenge).
+* Python: [Download latest version here](https://www.python.org/downloads/)
+* Pycharm Community Edition: [Download latest version here](https://www.jetbrains.com/pycharm/download/)
+* Chrome Driver: [Download latest version here](https://googlechromelabs.github.io/chrome-for-testing/)
+* Git: [Download latest version here](https://git-scm.com/downloads)
+* Luma Automation QA Challenge repo Github [HERE](https://github.com/Rene152005/Luma_Automation_QAChallenge).
 
 ## **LINKS, REFERENCES & MANUAL TESTING**
 1. The board with all user stories can be found here: [Go to Trello's Board for this project](https://trello.com/b/jOqTPdPm/rene-de-leons-qa-challenge)
