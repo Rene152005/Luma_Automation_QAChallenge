@@ -24,11 +24,32 @@ For the reader's reference, I'm leaving some useful links to help the installati
 
 ## **SET UP - SUMMARY VERSION**
 
-(1.) You can use Pycharm as IDE.
+(1.) You can use Pycharm as IDE. For this run to correctly run, you must download and install python. For references please use the links [HERE](https://www.python.org/downloads/windows/).
 
 (2.) You can clone the Luma Automation QA Challenge repo directly from Github which is found [HERE](https://github.com/Rene152005/Luma_Automation_QAChallenge).
 
-(3.) After the repo is installed, please install all the Python packages and tools with one command!
+(3.) Run the Python installer as Administrator.
+* Once you see the "Advanced Options" window, check on the option "Install for all users"
+* Select a custom location where to install Python (i.e. C:\Python\Python39)
+
+(4.) After the installation of python is completed, you can review the installation with this command from the command prompt:
+```
+python --version
+```
+![](C:\Users\rened\PycharmProjects\Luma_Automation_QAChallenge\Resources\Files\pythonVersion.png)
+
+(5.) If Step #4 is not working, please ensure your Environment Variables are properly setup. As a possible solution, please follow these steps:
+* Position your mouse over "This PC" and right-click to select the option "Properties".
+![](C:\Users\rened\PycharmProjects\Luma_Automation_QAChallenge\Resources\Files\MyPC.png)
+* Click on "Advanced system settings"
+* Select the tab "Advanced" and click the "Environment Variables…" button
+* Select the option "Path" from System variables and click on "Edit" button.
+![](C:\Users\rened\PycharmProjects\Luma_Automation_QAChallenge\Resources\Files\Environment_Variables.png)
+* It's important to note that the path must be added to both places "User Variables for <user>" on the top section and also the "System variables" bottom section of the environment variables.
+* On the bottom path, its also recommendable to add "C:\Python39\Scripts" which should be the address to the \Scripts folder directly.
+* Reboot the system
+
+(6.) Install the repo from Github either from zip files or SSH. After the repo is installed, please install all the Python packages and tools with one command!
 ```
 $ pip install -r requirements.txt
 ```
