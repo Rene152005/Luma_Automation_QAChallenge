@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-#Environments
+#Environment and URL variables
 ENVIRONMENT = "https://magento.softwaretestingboard.com/"
+URL_VALIDATION = "/sales/guest/view/"
 
 #Valid test data
 ORDER_ID = "000026977"

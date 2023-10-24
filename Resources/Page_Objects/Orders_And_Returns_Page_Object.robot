@@ -12,7 +12,6 @@ ${ORDER_ID_FIELD}                                   //input[@id="oar-order-id"]
 ${BILLING_LAST_NAME_FIELD}                          //input[@id="oar-billing-lastname"]
 ${EMAIL_FIELD}                                      //input[@id="oar_email"]
 ${ORDER_INFORMATION}                                //li[@class="item cms_page"]/strong
-${URL_LOCATION}                                     /sales/guest/view/
 
 
 *** Keywords ***
@@ -43,7 +42,7 @@ The user fills out the form
     ...                                             Set focus to element                            ${ORDER_INFORMATION}
 
 Location validation
-    Location Should Contain                         ${URL_LOCATION}
+    Location Should Contain                         ${URL_VALIDATION}
     
 The Order information table details validation
     [Documentation]    Validations for Order Information contents
