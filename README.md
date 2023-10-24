@@ -22,8 +22,8 @@ For the reader's reference, I'm leaving some useful links to help the installati
 1. The board with all user stories can be found here: [Go to Trello's Board for this project](https://trello.com/b/jOqTPdPm/rene-de-leons-qa-challenge)
 2. The complete test suite can be found here: [Test Suite in Google Sheets](https://docs.google.com/spreadsheets/d/115zRcR73_6-lYKnc-2P7PYC2c-QHvUgwGR-saxP5b48/edit#gid=61291363)
 
-## **SET UP - SUMMARY VERSION**
-(1.) You can use Pycharm as IDE. For this to correctly run, you must download and install python. For references please use the links [HERE](https://www.python.org/downloads/windows/).
+## **SET UP - SUMMARIZED VERSION**
+(1.) You can use Pycharm as IDE, I've seen other QA engineers successfully use VS Code too, but I don't recommend it. For this to correctly run, you must download and install python. For references please use the links [HERE](https://www.python.org/downloads/windows/).
 
 (2.) You can clone the Luma Automation QA Challenge repo directly from Github which is found [HERE](https://github.com/Rene152005/Luma_Automation_QAChallenge).
 
