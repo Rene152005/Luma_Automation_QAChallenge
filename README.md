@@ -37,7 +37,6 @@ For the reader's reference, I'm leaving some useful links to help the installati
 python --version
 ```
 ![](C:\Users\rened\PycharmProjects\Luma_Automation_QAChallenge\Resources\Files\pythonVersion.png)
-
 (5.) If Step #4 is not working, please ensure your Environment Variables are properly setup. As a possible solution, please follow these steps:
 * Position your mouse over "This PC" and right-click to select the option "Properties".
 ![](C:\Users\rened\PycharmProjects\Luma_Automation_QAChallenge\Resources\Files\MyPC.png)
