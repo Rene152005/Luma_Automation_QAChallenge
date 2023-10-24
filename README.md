@@ -17,15 +17,16 @@ For the reader's reference, I'm leaving some useful links to help the installati
 2. Pycharm Community Edition: [Download latest version here](https://www.jetbrains.com/pycharm/download/)
 3. Chrome Driver: [Download latest version here](https://googlechromelabs.github.io/chrome-for-testing/)
 4. Git: [Download latest version here](https://git-scm.com/downloads)
+5. Luma Automation QA Challenge repo Github [HERE](https://github.com/Rene152005/Luma_Automation_QAChallenge).
 
 ## **LINKS, REFERENCES & MANUAL TESTING**
 1. The board with all user stories can be found here: [Go to Trello's Board for this project](https://trello.com/b/jOqTPdPm/rene-de-leons-qa-challenge)
 2. The complete test suite can be found here: [Test Suite in Google Sheets](https://docs.google.com/spreadsheets/d/115zRcR73_6-lYKnc-2P7PYC2c-QHvUgwGR-saxP5b48/edit#gid=61291363)
 
 ## **SET UP - SUMMARIZED VERSION**
-(1.) You can use Pycharm as IDE, I've seen other QA engineers successfully use VS Code too, but I don't recommend it. For this to correctly run, you must download and install python. For references please use the links [HERE](https://www.python.org/downloads/windows/).
+(1.) You can use Pycharm as IDE, I've seen other QA engineers successfully use VS Code too, but I don't recommend it. For this to correctly run, you must download and install python.
 
-(2.) You can clone the Luma Automation QA Challenge repo directly from Github which is found [HERE](https://github.com/Rene152005/Luma_Automation_QAChallenge).
+(2.) You can clone the Luma Automation QA Challenge repo directly from Github via SSH or download of ZIP files.
 
 (3.) Run the Python installer as Administrator.
 * Once you see the "Advanced Options" window, check on the option "Install for all users"
